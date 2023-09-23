@@ -1,0 +1,22 @@
+// IT WILL PRINT AN INFINITE LOOP.....
+#include<iostream>
+using namespace std;
+int main()
+{
+    // for (int i=0;i<=5;i--)
+    // {
+    //     cout << i << " ";
+    //     i++;
+    // }
+    for(int i=0;i<=15;i+=2)
+    {
+        cout << i << " ";
+        
+        if(i&1)
+        {
+            continue;
+        }
+        i++;
+    }
+    return 0;
+}
